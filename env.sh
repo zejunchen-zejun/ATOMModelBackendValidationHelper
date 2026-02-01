@@ -8,6 +8,7 @@ alias tt0='bash ./test.0.6B.tp1.no.custom.sh'
 alias tt1='bash ./test.0.6B.tp1.sh'
 alias tt3='bash ./test.235B.tp8.ep8.sh'
 alias tt4='bash ./test.235B.tp8.ep8.original.sh'
+alias tt5='RUNNING_IN_SUBPROCESS=1 pytest -vs test_atom.py --optional 2>&1 | tee log'
 
 alias cc='bash ./curl.sh'
 # alias kk='rm -rf ./*.pt'
