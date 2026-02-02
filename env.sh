@@ -18,3 +18,4 @@ alias cc='bash ./curl.sh'
 
 pip install --upgrade triton
 pip install hf_transfer
+pip install tblib
