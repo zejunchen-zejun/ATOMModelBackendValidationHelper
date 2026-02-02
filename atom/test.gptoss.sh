@@ -5,7 +5,7 @@ export ATOM_GPT_OSS_MODEL=1
 
 rm -rf /root/.cache/
 
-model_path=/home/zejchen/gptoss
+model_path=/data/models/gpt-oss-120b
 
 python -m atom.entrypoints.openai_server \
     --model $model_path \

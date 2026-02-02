@@ -5,7 +5,7 @@ echo "run atom original"
 
 rm -rf /root/.cache/
 
-model_path=/home/zejchen/ds_fp4
+model_path=/data/models/DeepSeek-R1-0528-MXFP4-Preview
 
 python -m atom.entrypoints.openai_server \
     --model $model_path \
