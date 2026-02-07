@@ -11,7 +11,7 @@ unset VLLM_ATTENTION_BACKEND
 # export AMD_SERIALIZE_KERNEL=3
 # export AMD_LOG_LEVEL=2
 
-export ATOM_ENABLE_QK_NORM_ROPE_CACHE_QUANT_FUSION=0
+export ATOM_ENABLE_QK_NORM_ROPE_CACHE_QUANT_FUSION=1
 
 # quick allreduce
 export AITER_QUICK_REDUCE_QUANTIZATION=INT4
@@ -48,7 +48,6 @@ vllm serve $model_path \
     --max-num-batched-tokens 18432 \
     --max-model-len 16384 \
     --no-enable-prefix-caching \
-    --enforce-eager \
     2>&1 | tee log.serve.log &
 
     # --kv-cache-dtype fp8 \
