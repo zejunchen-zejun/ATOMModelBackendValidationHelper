@@ -1,5 +1,9 @@
 #!/bin/bash
 echo "run atom + vllm"
+
+# for plugin
+export ATOM_ENABLE_VLLM_PLUGIN=1
+
 export VLLM_ATTENTION_BACKEND=CUSTOM
 
 # export CUDA_VISIBLE_DEVICES=4,5,6,7
@@ -45,6 +49,7 @@ vllm serve $model_path \
     --max-model-len 16384 \
     --no-enable-prefix-caching \
     --model-impl atom \
+    --enforce-eager \
     2>&1 | tee log.serve.log &
 
     # --kv-cache-dtype fp8 \
