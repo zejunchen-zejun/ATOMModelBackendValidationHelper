@@ -40,7 +40,7 @@ vllm serve $model_path \
     --enable-expert-parallel \
     --trust-remote-code \
     --disable-log-requests \
-    --gpu_memory_utilization 0.06 \
+    --gpu_memory_utilization 0.1 \
     --async-scheduling \
     --load-format fastsafetensors \
     --compilation-config '{"cudagraph_mode": "FULL_AND_PIECEWISE"}' \
