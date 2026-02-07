@@ -17,6 +17,8 @@ alias cc='bash ./curl.sh'
 # kill all
 #             ps -eo pid,comm | grep -E '^( *[0-9]+ +(python3|tee|VLLM::))' | awk '{print $1}' | xargs kill -9
 
+alias py-ep='python -c "import sys, importlib.metadata as im; d=im.distribution(sys.argv[1]); [print(f\"[{e.group}]\n  {e.name} = {e.value}\") for e in d.entry_points]"'
+
 pip install --upgrade triton
 pip install hf_transfer
 pip install tblib

@@ -2,9 +2,8 @@
 echo "run atom + vllm"
 
 # for plugin
-export ATOM_ENABLE_VLLM_PLUGIN=1
-
-export VLLM_ATTENTION_BACKEND=CUSTOM
+unset VLLM_ATTENTION_BACKEND
+# export VLLM_ATTENTION_BACKEND=CUSTOM
 
 # export CUDA_VISIBLE_DEVICES=4,5,6,7
 
@@ -31,7 +30,8 @@ export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
 
 rm -rf /root/.cache/
 
-model_path=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
+# model_path=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
+model_path=/data/models/Qwen3-30B-A3B-Instruct-2507-FP8
 
 vllm serve $model_path \
     --host localhost \
@@ -48,7 +48,6 @@ vllm serve $model_path \
     --max-num-batched-tokens 18432 \
     --max-model-len 16384 \
     --no-enable-prefix-caching \
-    --model-impl atom \
     --enforce-eager \
     2>&1 | tee log.serve.log &
 
