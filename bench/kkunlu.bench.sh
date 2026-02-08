@@ -37,7 +37,7 @@ echo "ATOM MIN_INPUT_LEN=${MIN_INPUT_LEN}, MAX_INPUT_LEN=${MAX_INPUT_LEN}, MIN_O
 
 sleep 2
 
-/home/zejchen/plugin/ATOM/test_plugin/bench/kunlun-benchmark/kunlun-benchmark \
+/home/zejchen@amd.com/plugin/ATOM/ATOMModelBackendValidationHelper/bench/kunlun-benchmark/kunlun-benchmark \
   vllm \
   server \
   --port 8000 \
