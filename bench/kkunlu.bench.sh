@@ -6,7 +6,7 @@
 #解壓就好了, 安裝幾個缺的library
 # pip install jsonlines prettytable oss2
 
-MODEL=/data/pretrained-models/Qwen3-235B-A22B-Instruct-2507-FP8
+MODEL=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
 
 # 3-3.6K, 0.3-0.5K
 MIN_INPUT_LEN=3000

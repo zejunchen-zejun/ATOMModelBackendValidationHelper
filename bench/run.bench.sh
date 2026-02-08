@@ -1,6 +1,6 @@
 #!bin/bash
 
-MODEL=/home/zejchen/model/Qwen3-235B-A22B-Instruct-2507-FP8
+MODEL=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
 
 # 1K/1K
 ISL=1000
