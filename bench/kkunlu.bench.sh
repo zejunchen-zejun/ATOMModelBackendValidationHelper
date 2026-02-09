@@ -6,7 +6,7 @@
 #解壓就好了, 安裝幾個缺的library
 # pip install jsonlines prettytable oss2
 
-MODEL=/data/pretrained-models/Qwen3-235B-A22B-Instruct-2507-FP8
+MODEL=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
 
 # 3-3.6K, 0.3-0.5K
 MIN_INPUT_LEN=3000
@@ -37,7 +37,7 @@ echo "ATOM MIN_INPUT_LEN=${MIN_INPUT_LEN}, MAX_INPUT_LEN=${MAX_INPUT_LEN}, MIN_O
 
 sleep 2
 
-/home/zejchen/plugin/ATOM/test_plugin/bench/kunlun-benchmark/kunlun-benchmark \
+/home/zejchen@amd.com/plugin/ATOM/ATOMModelBackendValidationHelper/bench/kunlun-benchmark/kunlun-benchmark \
   vllm \
   server \
   --port 8000 \

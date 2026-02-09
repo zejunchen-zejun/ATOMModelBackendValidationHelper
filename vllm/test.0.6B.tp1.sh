@@ -1,9 +1,7 @@
 #!/bin/bash
 echo "run atom + vllm"
 export CUDA_VISIBLE_DEVICES=7
-export AMD_SERIALIZE_KERNEL=3
-
-export VLLM_ATTENTION_BACKEND=CUSTOM
+# export AMD_SERIALIZE_KERNEL=3
 
 export SAFETENSORS_FAST_GPU=1
 export VLLM_ROCM_USE_AITER=1
@@ -15,7 +13,7 @@ export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
 
 rm -rf /root/.cache/
 
-model_path=/home/zejchen/model/Qwen3-0.6B
+model_path=/data/models/Qwen3-0.6B
 
 vllm serve $model_path \
     --host localhost \
@@ -27,7 +25,6 @@ vllm serve $model_path \
     --async-scheduling \
     --load-format fastsafetensors \
     --compilation-config '{"cudagraph_mode": "FULL_AND_PIECEWISE"}' \
-    --model-impl atom \
     --kv-cache-dtype fp8 \
     --max-num-batched-tokens 20000 \
     --max-model-len 16384 \
