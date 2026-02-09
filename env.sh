@@ -1,11 +1,10 @@
 alias caa='cd /home/zejchen@amd.com/plugin/ATOM/ATOMModelBackendValidationHelper'
 
-# alias gg='git fetch && git checkout origin/zejun/plugin_for_atom_1223'
-alias gg='git fetch && git checkout origin/zejun/plugin_for_atom_vllm_atom'
+alias gg='git fetch && git checkout origin/zejun/plugin_for_atom_1223'
+# alias gg='git fetch && git checkout origin/zejun/plugin_for_atom_vllm_atom'
 # alias ggg='git fetch && git checkout origin/zejun/model_impl'
 # alias gbb='git checkout origin/zejun/plugin_for_atom_1223'
 
-alias tt0='bash ./test.0.6B.tp1.no.custom.sh'
 alias tt1='bash ./test.0.6B.tp1.sh'
 alias tt3='bash ./test.235B.tp8.ep8.sh'
 alias tt4='bash ./test.235B.tp8.ep8.original.sh'
