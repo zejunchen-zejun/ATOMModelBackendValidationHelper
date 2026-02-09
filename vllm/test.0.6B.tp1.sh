@@ -26,6 +26,6 @@ vllm serve $model_path \
     --load-format fastsafetensors \
     --compilation-config '{"cudagraph_mode": "FULL_AND_PIECEWISE"}' \
     --kv-cache-dtype fp8 \
-    --max-num-batched-tokens 20000 \
+    --max-num-batched-tokens 18432 \
     --max-model-len 16384 \
     2>&1 | tee log.serve.log &

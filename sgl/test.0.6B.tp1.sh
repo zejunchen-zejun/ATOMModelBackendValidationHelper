@@ -4,7 +4,7 @@ export CUDA_VISIBLE_DEVICES=7
 
 rm -rf /root/.cache/
 
-model_path=/data/pretrained-models/Qwen3-0.6B
+model_path=/data/models/Qwen3-0.6B
 
 python3 -m sglang.launch_server \
     --model-path $model_path \
