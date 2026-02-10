@@ -2,6 +2,8 @@
 
 MODEL=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
 
+RANGE_RATIO=0.8
+
 # 1K/1K
 ISL=1000
 OSL=1000
@@ -24,7 +26,7 @@ NUM=$(( CON * 4 ))
 #NUM=$(( CON * 4 ))
 
 echo "ATOM Model=${MODEL}"
-echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON}"
+echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON} RANGE_RATIO=${RANGE_RATIO}"
 
 sleep 2
 
@@ -36,7 +38,7 @@ python bench_serving/benchmark_serving.py \
     --dataset-name=random \
     --random-input-len=$ISL \
     --random-output-len=$OSL \
-    --random-range-ratio 0.8 \
+    --random-range-ratio ${RANGE_RATIO} \
     --num-prompts=${NUM} \
     --max-concurrency=${CON} \
     --request-rate=inf \
