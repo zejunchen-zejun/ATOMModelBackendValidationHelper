@@ -17,7 +17,6 @@ export ATOM_DISABLE_VLLM_PLUGIN_ATTENTION=1
 
 # qucik allreduce for PoC
 export VLLM_ROCM_QUICK_REDUCE_QUANTIZATION=INT4
-export VLLM_ROCM_QUICK_REDUCE_MAX_SIZE_BYTES_MB=2048
 
 # cache dir
 export VLLM_CACHE_ROOT=/root/.cache/vllm
