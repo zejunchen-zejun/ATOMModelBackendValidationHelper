@@ -28,7 +28,7 @@ echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON}"
 
 sleep 2
 
-git clone https://github.com/kimbochen/bench_serving.git
+# git clone https://github.com/kimbochen/bench_serving.git
 python bench_serving/benchmark_serving.py \
     --model=$MODEL \
     --backend=vllm \
@@ -36,7 +36,7 @@ python bench_serving/benchmark_serving.py \
     --dataset-name=random \
     --random-input-len=$ISL \
     --random-output-len=$OSL \
-    --random-range-ratio 1 \
+    --random-range-ratio 0.8 \
     --num-prompts=${NUM} \
     --max-concurrency=${CON} \
     --request-rate=inf \

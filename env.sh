@@ -21,3 +21,4 @@ alias py-ep='python -c "import sys, importlib.metadata as im; d=im.distribution(
 pip install --upgrade triton
 pip install hf_transfer
 pip install tblib
+pip install transformers==5.0.0
