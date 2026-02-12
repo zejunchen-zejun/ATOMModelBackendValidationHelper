@@ -22,3 +22,6 @@ pip install --upgrade triton
 pip install hf_transfer
 pip install tblib
 pip install transformers==5.0.0
+
+# for kunlun bench
+pip install jsonlines prettytable oss2
