@@ -20,6 +20,12 @@ export SAFETENSORS_FAST_GPU=1
 export VLLM_ROCM_USE_AITER=1
 export VLLM_RPC_TIMEOUT=1800000
 
+# for profiling
+# export VLLM_CUSTOM_SCOPES_FOR_PROFILING=1
+# export VLLM_TORCH_PROFILER_WITH_STACK=1
+# export VLLM_TORCH_PROFILER_RECORD_SHAPES=1
+# export VLLM_TORCH_PROFILER_DIR=./
+
 # cache dir
 export VLLM_CACHE_ROOT=/root/.cache/vllm
 export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
