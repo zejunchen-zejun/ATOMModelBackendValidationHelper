@@ -19,8 +19,6 @@ python3 -m sglang.launch_server \
     --expert-parallel-size 8 \
     --kv-cache-dtype fp8_e4m3 \
     --mem-fraction-static 0.8 \
-    --page-size 1024 \
-    --model-impl atom \
     2>&1 | tee log.serve.log &
 
 # --disable-cuda-graph \
