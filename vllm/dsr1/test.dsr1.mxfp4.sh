@@ -3,15 +3,6 @@ echo "run atom + vllm"
 
 # for plugin
 unset VLLM_ATTENTION_BACKEND
-# export VLLM_ATTENTION_BACKEND=CUSTOM
-
-# export CUDA_VISIBLE_DEVICES=4,5,6,7
-
-# for debug
-# export AMD_SERIALIZE_KERNEL=3
-# export AMD_LOG_LEVEL=2
-
-export ATOM_ENABLE_QK_NORM_ROPE_CACHE_QUANT_FUSION=1
 
 # quick allreduce
 export AITER_QUICK_REDUCE_QUANTIZATION=INT4
@@ -30,14 +21,9 @@ export VLLM_RPC_TIMEOUT=1800000
 export VLLM_CACHE_ROOT=/root/.cache/vllm
 export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
 
-# export ROCM_DEBUG_AGENT_OPTIONS="--all"
-# export HSA_TOOLS_LIB=/opt/rocm-7.0.0/lib/librocm-debug-agent.so.2
-# export TRITON_DEBUG=1
-
 rm -rf /root/.cache/
 
-model_path=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
-# model_path=/data/models/Qwen3-30B-A3B-Instruct-2507-FP8
+model_path=/data/models/DeepSeek-R1-0528-MXFP4
 
 vllm serve $model_path \
     --host localhost \

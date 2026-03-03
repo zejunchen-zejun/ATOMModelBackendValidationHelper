@@ -5,11 +5,6 @@ alias gg='git fetch && git checkout origin/zejun/plugin_for_atom_1223'
 # alias ggg='git fetch && git checkout origin/zejun/model_impl'
 # alias gbb='git checkout origin/zejun/plugin_for_atom_1223'
 
-alias tt1='bash ./test.0.6B.tp1.sh'
-alias tt3='bash ./test.235B.tp8.ep8.sh'
-alias tt4='bash ./test.235B.tp8.ep8.original.sh'
-alias tt5='RUNNING_IN_SUBPROCESS=1 pytest -vs test_atom.py --optional 2>&1 | tee log'
-
 alias cc='bash ./curl.sh'
 # alias kk='rm -rf ./*.pt'
 
