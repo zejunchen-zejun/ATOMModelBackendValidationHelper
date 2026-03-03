@@ -6,6 +6,8 @@ rm -rf /root/.cache/
 
 model_path=/data/models/Qwen3-0.6B
 
+echo "Starting server with model: $model_path"
+
 python3 -m sglang.launch_server \
     --model-path $model_path \
     --host localhost \

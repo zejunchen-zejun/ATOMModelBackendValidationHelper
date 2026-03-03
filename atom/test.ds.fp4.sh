@@ -7,6 +7,8 @@ rm -rf /root/.cache/
 
 model_path=/data/models/DeepSeek-R1-0528-MXFP4
 
+echo "Starting server with model: $model_path"
+
 python -m atom.entrypoints.openai_server \
     --model $model_path \
     --host localhost \

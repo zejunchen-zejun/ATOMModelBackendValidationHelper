@@ -40,6 +40,7 @@ sleep 2
 echo "start profile"
 curl -X POST http://localhost:8000/start_profile
 
+echo "Starting bench with model: ${MODEL}"
 /home/zejchen@amd.com/plugin/ATOM/ATOMModelBackendValidationHelper/bench/kunlun-benchmark/kunlun-benchmark \
   vllm \
   server \

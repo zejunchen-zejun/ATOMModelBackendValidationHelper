@@ -37,6 +37,7 @@ echo "ATOM MIN_INPUT_LEN=${MIN_INPUT_LEN}, MAX_INPUT_LEN=${MAX_INPUT_LEN}, MIN_O
 
 sleep 2
 
+echo "Starting bench with model: ${MODEL}"
 /home/zejchen@amd.com/plugin/ATOM/ATOMModelBackendValidationHelper/bench/kunlun-benchmark/kunlun-benchmark \
   vllm \
   server \

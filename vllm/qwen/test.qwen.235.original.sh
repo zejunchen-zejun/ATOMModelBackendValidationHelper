@@ -32,6 +32,8 @@ rm -rf /root/.cache/
 
 model_path=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
 
+echo "Starting server with model: $model_path"
+
 vllm serve $model_path \
     --host localhost \
     --port 8000 \

@@ -10,6 +10,8 @@ export AITER_QUICK_REDUCE_QUANTIZATION=INT4
 
 model_path=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
 
+echo "Starting server with model: $model_path"
+
 python3 -m sglang.launch_server \
     --model-path $model_path \
     --host localhost \

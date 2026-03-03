@@ -30,6 +30,8 @@ rm -rf /root/.cache/
 
 model_path=/data/models/DeepSeek-R1-0528-MXFP4
 
+echo "Starting server with model: $model_path"
+
 vllm serve $model_path \
     --host localhost \
     --port 8000 \

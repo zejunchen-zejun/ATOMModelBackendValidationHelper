@@ -33,6 +33,7 @@ echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON} RANGE_RATIO=${RANGE_RA
 sleep 2
 
 # git clone https://github.com/kimbochen/bench_serving.git
+echo "Starting bench with model: ${MODEL}"
 python bench_serving/benchmark_serving.py \
     --model=$MODEL \
     --backend=vllm \
