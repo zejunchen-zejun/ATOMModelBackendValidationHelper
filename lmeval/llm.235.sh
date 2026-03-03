@@ -2,7 +2,10 @@ addr=localhost
 port=8000
 
 url=http://${addr}:${port}/v1/completions
+
 model=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
+# model=/data/models/DeepSeek-R1-0528-MXFP4
+# model=/data/models/DeepSeek-R1-0528
 
 task=gsm8k
 
