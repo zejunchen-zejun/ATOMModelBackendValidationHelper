@@ -12,5 +12,5 @@ python -m atom.entrypoints.openai_server \
     --host localhost \
     --tensor-parallel-size 8 \
     --kv_cache_dtype fp8 \
-    --gpu-memory-utilization 0.8 \
+    --gpu-memory-utilization 0.9 \
     2>&1 | tee log.serve.log &

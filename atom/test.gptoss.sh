@@ -14,5 +14,5 @@ python -m atom.entrypoints.openai_server \
     --enable-dp-attention \
     --enable-expert-parallel \
     --kv_cache_dtype fp8 \
-    --gpu-memory-utilization 0.8 \
+    --gpu-memory-utilization 0.9 \
     2>&1 | tee log.serve.log &
