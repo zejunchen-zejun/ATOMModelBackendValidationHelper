@@ -45,7 +45,7 @@ vllm serve $model_path \
     --tensor-parallel-size 8 \
     --enable-expert-parallel \
     --trust-remote-code \
-    --gpu_memory_utilization 0.9 \
+    --gpu_memory_utilization 0.1 \
     --async-scheduling \
     --load-format fastsafetensors \
     --compilation-config '{"cudagraph_mode": "FULL_AND_PIECEWISE"}' \
