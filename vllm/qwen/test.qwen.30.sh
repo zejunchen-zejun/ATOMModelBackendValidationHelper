@@ -45,7 +45,6 @@ vllm serve $model_path \
     --tensor-parallel-size 8 \
     --enable-expert-parallel \
     --trust-remote-code \
-    --disable-log-requests \
     --gpu_memory_utilization 0.9 \
     --async-scheduling \
     --load-format fastsafetensors \

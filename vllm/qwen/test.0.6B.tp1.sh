@@ -22,7 +22,6 @@ vllm serve $model_path \
     --port 8000 \
     --tensor-parallel-size 1 \
     --trust-remote-code \
-    --disable-log-requests \
     --gpu_memory_utilization 0.1 \
     --async-scheduling \
     --load-format fastsafetensors \
