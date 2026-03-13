@@ -13,17 +13,17 @@ CON=16
 # 1K/1K
 ISL=1024
 OSL=1024
-NUM=$(( CON * 4 ))
+NUM=$(( CON * 5 ))
 
 # 8K/1K
 #ISL=8192
 #OSL=1024
-#NUM=$(( CON * 4 ))
+#NUM=$(( CON * 5 ))
 
 # 1K/8K
 # ISL=1024
 # OSL=8192
-# NUM=$(( CON * 4 ))
+# NUM=$(( CON * 5 ))
 
 echo "ATOM Model=${MODEL}"
 echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON} RANGE_RATIO=${RANGE_RATIO}"
