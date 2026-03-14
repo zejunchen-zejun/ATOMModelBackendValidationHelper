@@ -26,7 +26,7 @@ NUM=$(( CON * 2 ))
 # NUM=$(( CON * 5 ))
 
 echo "ATOM Model=${MODEL}"
-echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON} RANGE_RATIO=${RANGE_RATIO}"
+echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON} RANGE_RATIO=${RANGE_RATIO} Profile"
 
 sleep 2
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "run atom + vllm"
+echo "run atom + vllm + profile"
 
 # for plugin
 unset VLLM_ATTENTION_BACKEND
@@ -41,6 +41,7 @@ vllm serve $model_path \
     --max-num-batched-tokens 18432 \
     --max-model-len 16384 \
     --no-enable-prefix-caching \
+    --profile \
     2>&1 | tee log.serve.log &
 
     # --kv-cache-dtype fp8 \
