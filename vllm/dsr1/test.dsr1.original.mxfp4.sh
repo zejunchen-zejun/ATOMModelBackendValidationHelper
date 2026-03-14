@@ -40,7 +40,6 @@ vllm serve $model_path \
     --trust-remote-code \
     --gpu_memory_utilization 0.9 \
     --async-scheduling \
-    --load-format fastsafetensors \
     --compilation-config '{"cudagraph_mode": "FULL_AND_PIECEWISE"}' \
     --kv-cache-dtype fp8 \
     --max-num-batched-tokens 18432 \
