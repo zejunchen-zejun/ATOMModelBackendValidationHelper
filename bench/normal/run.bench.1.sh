@@ -1,24 +1,24 @@
 #!bin/bash
 
 MODEL=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
-# MODEL=/data/models/DeepSeek-R1-0528-MXFP4
+# MODEL=/shared/data/models/DeepSeek-R1-0528-MXFP4
 # MODEL=/data/models/DeepSeek-R1-0528
 
 RANGE_RATIO=0.8
 
 # 1K/1K
-# ISL=1000
-# OSL=1000
-# CON=256
+ISL=1000
+OSL=1000
+CON=256
 #CON=128
-# NUM=$(( CON * 4 ))
+NUM=$(( CON * 4 ))
 
 # 4K/1K
-ISL=4000
-OSL=1000
-CON=128
-# CON=64
-NUM=$(( CON * 4 ))
+#ISL=4000
+#OSL=1000
+#CON=128
+#CON=64
+#NUM=$(( CON * 4 ))
 
 # 10K/1K
 #ISL=10000

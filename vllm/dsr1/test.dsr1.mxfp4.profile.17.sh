@@ -23,7 +23,7 @@ export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
 
 rm -rf /root/.cache/
 
-model_path=/shared/shared/data/models/DeepSeek-R1-0528-MXFP4
+model_path=/shared/shared/shared/data/models/DeepSeek-R1-0528-MXFP4
 
 profiler_config=$(printf '{"profiler":"torch","torch_profiler_dir":"%s","torch_profiler_with_stack":%s,"torch_profiler_record_shapes":%s}' \
     "${VLLM_TORCH_PROFILER_DIR}" \

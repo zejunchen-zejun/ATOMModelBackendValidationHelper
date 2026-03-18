@@ -23,7 +23,7 @@ export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
 
 rm -rf /root/.cache/
 
-model_path=/data/models/DeepSeek-R1-0528-MXFP4
+model_path=/shared/data/models/DeepSeek-R1-0528-MXFP4
 
 echo "Starting server with model: $model_path"
 

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # MODEL=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
-MODEL="${MODEL:-/data/models/DeepSeek-R1-0528-MXFP4}"
+MODEL="${MODEL:-/shared/data/models/DeepSeek-R1-0528-MXFP4}"
 # MODEL=/data/models/DeepSeek-R1-0528
 
 RANGE_RATIO="${RANGE_RATIO:-0.8}"
@@ -15,7 +15,7 @@ SERVER_READY_POLL_SECONDS="${SERVER_READY_POLL_SECONDS:-5}"
 SERVER_SHUTDOWN_POLL_SECONDS="${SERVER_SHUTDOWN_POLL_SECONDS:-2}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SERVER_SCRIPT="${SCRIPT_DIR}/../vllm/dsr1/test.dsr1.original.mxfp4.sh"
+SERVER_SCRIPT="${SCRIPT_DIR}/../vllm/dsr1/test.dsr1.mxfp4.sh"
 BENCH_SERVING_DIR="${SCRIPT_DIR}/bench_serving"
 BENCH_SERVING_REPO_URL="${BENCH_SERVING_REPO_URL:-https://github.com/kimbochen/bench_serving.git}"
 BENCHMARK_SCRIPT="${BENCH_SERVING_DIR}/benchmark_serving.py"

@@ -1,7 +1,7 @@
 #!bin/bash
 
 # MODEL=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
-MODEL=/data/models/DeepSeek-R1-0528-MXFP4
+MODEL=/shared/data/models/DeepSeek-R1-0528-MXFP4
 # MODEL=/data/models/DeepSeek-R1-0528
 
 RANGE_RATIO=0.8
@@ -13,7 +13,7 @@ CON=16
 # 1K/1K
 ISL=1024
 OSL=1024
-NUM=$(( CON * 2 ))
+NUM=$(( CON * 5 ))
 
 # 8K/1K
 #ISL=8192
@@ -26,7 +26,7 @@ NUM=$(( CON * 2 ))
 # NUM=$(( CON * 5 ))
 
 echo "ATOM Model=${MODEL}"
-echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON} RANGE_RATIO=${RANGE_RATIO} Profile"
+echo "ATOM ISL=${ISL}, OSL=${OSL}, NUM=${NUM}, CON=${CON} RANGE_RATIO=${RANGE_RATIO}"
 
 sleep 2
 
@@ -47,7 +47,6 @@ python bench_serving/benchmark_serving.py \
     --save-result \
     --percentile-metrics="ttft,tpot,itl,e2el" \
     --result-dir=./ \
-    --profile \
     2>&1 | tee log.bench.log
 
 echo "ATOM Model=${MODEL}"
