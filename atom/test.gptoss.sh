@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "run atom original"
 
-export ATOM_GPT_OSS_MODEL=1
-
 rm -rf /root/.cache/
 
 model_path=/data/models/gpt-oss-120b

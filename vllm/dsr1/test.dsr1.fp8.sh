@@ -8,7 +8,7 @@ unset VLLM_ATTENTION_BACKEND
 export AITER_QUICK_REDUCE_QUANTIZATION=INT4
 
 export SAFETENSORS_FAST_GPU=1
-export VLLM_ROCM_USE_AITER=1
+# export VLLM_ROCM_USE_AITER=1
 export VLLM_RPC_TIMEOUT=1800000
 
 # for profiling
@@ -23,7 +23,7 @@ export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
 
 rm -rf /root/.cache/
 
-model_path=/data/models/DeepSeek-R1-0528
+model_path=/shared/data/models/DeepSeek-R1-0528
 
 echo "Starting server with model: $model_path"
 
