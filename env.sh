@@ -1,4 +1,4 @@
-alias cdd='/shared/amdgpu/home/zejun_chen_qle/plugin'
+alias cdd='cd /shared/amdgpu/home/zejun_chen_qle/plugin'
 
 alias rrr='rocm-smi'
 alias ppp='pkill -f python'
