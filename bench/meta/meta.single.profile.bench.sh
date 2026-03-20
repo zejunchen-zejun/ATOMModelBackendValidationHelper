@@ -14,7 +14,7 @@ CON=4
 # 1K/1K
 ISL=1024
 OSL=1024
-NUM=$(( CON * 2 ))
+NUM=$(( CON * 4 ))
 
 # 8K/1K
 #ISL=8192
