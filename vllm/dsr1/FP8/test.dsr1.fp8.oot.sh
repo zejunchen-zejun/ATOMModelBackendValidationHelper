@@ -17,6 +17,8 @@ export VLLM_RPC_TIMEOUT=1800000
 # export VLLM_TORCH_PROFILER_RECORD_SHAPES=1
 # export VLLM_TORCH_PROFILER_DIR=./
 
+export ATOM_DUAL_STREAM_MOE_TOKEN_THRESHOLD=0
+
 # cache dir
 export VLLM_CACHE_ROOT=/root/.cache/vllm
 export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
