@@ -6,6 +6,7 @@ export CUDA_VISIBLE_DEVICES=7
 rm -rf /root/.cache/
 
 export ATOM_TORCH_PROFILER_DIR=./profiler_traces
+export ATOM_PROFILER_MORE=1
 
 model_path=/shared/data/amd_int/models/Qwen3-0.6B
 
