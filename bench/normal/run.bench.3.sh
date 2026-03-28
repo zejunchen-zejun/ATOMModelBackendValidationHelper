@@ -1,7 +1,7 @@
 #!bin/bash
 
 MODEL=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
-# MODEL=/shared/data/models/DeepSeek-R1-0528-MXFP4
+# MODEL=/shared/data/amd_int/models/DeepSeek-R1-0528-MXFP4
 # MODEL=/data/models/DeepSeek-R1-0528
 
 RANGE_RATIO=0.8

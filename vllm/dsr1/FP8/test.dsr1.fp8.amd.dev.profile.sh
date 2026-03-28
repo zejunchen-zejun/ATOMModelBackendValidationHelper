@@ -19,7 +19,7 @@ export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
 
 rm -rf /root/.cache/
 
-model_path=/shared/data/models/DeepSeek-R1-0528
+model_path=/shared/data/amd_int/models/DeepSeek-R1-0528
 
 # for profiling
 export VLLM_CUSTOM_SCOPES_FOR_PROFILING=1
