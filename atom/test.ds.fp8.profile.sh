@@ -4,6 +4,7 @@ echo "run atom original"
 # export AMD_SERIALIZE_KERNEL=3
 
 export ATOM_TORCH_PROFILER_DIR=./profiler_traces
+export ATOM_PROFILER_MORE=1
 
 rm -rf /root/.cache/
 
