@@ -7,7 +7,7 @@ export ATOM_TORCH_PROFILER_DIR=./profiler_traces
 
 rm -rf /root/.cache/
 
-model_path=/data/models/DeepSeek-R1-0528
+model_path=/shared/data/amd_int/models/DeepSeek-R1-0528
 
 echo "Starting server with model: $model_path"
 python -m atom.entrypoints.openai_server \

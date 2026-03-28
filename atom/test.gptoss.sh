@@ -3,7 +3,7 @@ echo "run atom original"
 
 rm -rf /root/.cache/
 
-model_path=/data/models/gpt-oss-120b
+model_path=/shared/data/amd_int/models/gpt-oss-120b
 
 echo "Starting server with model: $model_path"
 

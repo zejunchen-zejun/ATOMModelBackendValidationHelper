@@ -5,7 +5,7 @@ export CUDA_VISIBLE_DEVICES=7
 
 rm -rf /root/.cache/
 
-model_path=/data/models/Qwen3-0.6B
+model_path=/shared/data/amd_int/models/Qwen3-0.6B
 
 echo "Starting server with model: $model_path"
 

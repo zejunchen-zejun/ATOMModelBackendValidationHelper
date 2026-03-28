@@ -8,7 +8,7 @@ export ATOM_ENABLE_QK_NORM_ROPE_CACHE_QUANT_FUSION=1
 # quick allreduce
 export AITER_QUICK_REDUCE_QUANTIZATION=INT4
 
-model_path=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
+model_path=/shared/data/amd_int/models/Qwen3-235B-A22B-Instruct-2507-FP8
 
 echo "Starting server with model: $model_path"
 

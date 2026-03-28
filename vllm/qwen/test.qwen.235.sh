@@ -35,8 +35,8 @@ export TORCHINDUCTOR_CACHE_DIR=/root/.cache/inductor
 
 rm -rf /root/.cache/
 
-model_path=/data/models/Qwen3-235B-A22B-Instruct-2507-FP8
-# model_path=/data/models/Qwen3-30B-A3B-Instruct-2507-FP8
+model_path=/shared/data/amd_int/models/Qwen3-235B-A22B-Instruct-2507-FP8
+# model_path=/shared/data/amd_int/models/Qwen3-30B-A3B-Instruct-2507-FP8
 
 echo "Starting server with model: $model_path"
 
